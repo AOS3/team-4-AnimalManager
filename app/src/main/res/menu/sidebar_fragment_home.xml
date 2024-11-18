@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="전체보기"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_home_fragment_sidebar_show_all"
+                android:icon="@drawable/ic_show_all"
+                android:title="전체 보기"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+
+
+    <item
+        android:title="개별보기"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_home_fragment_sidebar_show_dog"
+                android:icon="@drawable/ic_dog"
+                android:title="강아지 보기"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/menu_home_fragment_sidebar_show_cat"
+                android:icon="@drawable/ic_cat"
+                android:title="고양이 보기"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/menu_home_fragment_sidebar_show_parrot"
+                android:icon="@drawable/ic_parrot"
+                android:title="앵무새 보기"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+
+</menu>

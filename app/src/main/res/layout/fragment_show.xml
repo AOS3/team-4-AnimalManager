@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.show.ShowFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_fragment_show"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/toolbar_fragment_show"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="동물 정보 확인" />
+
+    <TextView
+        android:id="@+id/tv_fragment_show_animal_category_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="동물 종류"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_fragment_show" />
+
+    <TextView
+        android:id="@+id/tv_fragment_show_animal_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_fragment_show_animal_category_label"
+        tools:text="강아지" />
+
+    <TextView
+        android:id="@+id/tv_fragment_show_animal_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="이름"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_fragment_show_animal_category" />
+
+    <TextView
+        android:id="@+id/tv_fragment_show_animal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_fragment_show_animal_name_label"
+        tools:text="코틀린" />
+
+    <TextView
+        android:id="@+id/tv_fragment_show_animal_gender_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="성별"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_fragment_show_animal_name_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_fragment_show_animal_category" />
+
+    <TextView
+        android:id="@+id/tv_fragment_show_animal_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@id/tv_fragment_show_animal_gender_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_fragment_show_animal_gender_label"
+        tools:text="수컷" />
+
+    <TextView
+        android:id="@+id/tv_fragment_show_animal_age_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="나이"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_fragment_show_animal_gender" />
+
+    <TextView
+        android:id="@+id/tv_fragment_show_animal_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_fragment_show_animal_age_label"
+        tools:text="16 살" />
+
+    <TextView
+        android:id="@+id/tv_fragment_show_animal_birth_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="생일"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_fragment_show_animal_age_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_fragment_show_animal_gender" />
+
+    <TextView
+        android:id="@+id/tv_fragment_show_animal_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="@id/tv_fragment_show_animal_birth_label"
+        app:layout_constraintTop_toBottomOf="@id/tv_fragment_show_animal_age_label"
+        tools:text="2024년 11월 12일" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
